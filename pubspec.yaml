@@ -13,7 +13,7 @@ description: Minimal Flutter Application
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 22.3.2
+version: 22.7.1
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -27,7 +27,7 @@ dependencies:
   cupertino_icons: ^1.0.4
   flutter_parsed_text: ^2.2.1
   http: ^0.13.4
-  url_launcher: ^6.0.20
+  url_launcher: ^6.1.4
 
 dev_dependencies:
   flutter_test:

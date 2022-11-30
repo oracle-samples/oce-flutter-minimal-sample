@@ -61,7 +61,7 @@ if (flutterCompileSdkVersion == null) {
     flutterCompileSdkVersion = localProperties.getProperty('flutter.compileSdkVersion')
 }
 if (flutterCompileSdkVersion == null) {
-    flutterCompileSdkVersion = 30
+    flutterCompileSdkVersion = 31
 } else {
     flutterCompileSdkVersion = flutterCompileSdkVersion.toInteger()
 }

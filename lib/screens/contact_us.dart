@@ -21,8 +21,8 @@ class ContactUs extends StatelessWidget {
   final AppImages appImages;
 
   Future<void> _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -98,12 +98,14 @@ class ContactUs extends StatelessWidget {
                           final Map<String, String> map = <String, String>{};
                           final RegExp customRegExp = RegExp(pattern);
                           final Match match = customRegExp.firstMatch(str);
-                          map['display'] = match.group(1);
-                          map['value'] = match.group(2);
+                          map['display'] = match.group(2);
+                          map['value'] = match.group(3);
                           return map;
                         },
                         onTap: (String url) {
-                          _launchURL(url);
+                          final RegExp customRegExp = RegExp(r'\[@([^:]+):([^\]]+)\]');
+                          final Match match = customRegExp.firstMatch(url);
+                          _launchURL(match.group(2));
                         }),
                   ],
                   style: kBodyText,
