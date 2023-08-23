@@ -2,6 +2,8 @@
 
 This repository holds the sample source code for a [Flutter](https://flutter.dev) implementation of a simple site powered by Oracle Content Management.
 
+## Getting Started
+
 Please follow the [tutorial](https://www.oracle.com/pls/topic/lookup?ctx=cloud&id=oce-flutter-minimal-sample).
 
 ## Images
@@ -20,7 +22,7 @@ vulnerability disclosure process.
 
 ## License
 
-Copyright (c) 2022, Oracle and/or its affiliates.
+Copyright (c) 2022, 2023 Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.
